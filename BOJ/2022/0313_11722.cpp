@@ -18,7 +18,7 @@ int main() {
 			}
 		}
 	}
-  # dp 배열에서 가장 큰 값 찾기
+  // dp 배열에서 가장 큰 값 찾기
 	int m = 0;
 	for (int i = 0; i < n; i++) {
 		if (dp[i] > m) {
