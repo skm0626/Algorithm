@@ -11,7 +11,7 @@ int main() {
 	}
 	for (int i = 2; i <=n; i++) { 
 		for (int j = 1; j < i; j++) {
-			dp[i] = min(dp[i],dp[i-j]+dp[j]); #앞의 값들을 이용해 비교하면서 최소값 찾아내기
+			dp[i] = min(dp[i],dp[i-j]+dp[j]); // 앞의 값들을 이용해 비교하면서 최소값 찾아내기
 		}
 	}
 	cout << dp[n];
