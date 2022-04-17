@@ -8,4 +8,8 @@ Start from : 2022.01.19~
   - Reservoir Sampling 
   <br>
   - DGIM
+  <br>
+  - flajolet-martin
+  <br>
+  - Bloom Filter
 </details>
