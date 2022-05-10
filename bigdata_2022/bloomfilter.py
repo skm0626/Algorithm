@@ -21,7 +21,6 @@ class BloomFilter:
             self.bitarray |= (1<<pos) # set하기
 
     def test(self, item): # 있는지 없는지
-        test_data.append(item)
         for i in range(self.n_hashs):
             pos = mmh3.hash(item, self.seeds[i]) % self.n_bits
             # 해당 pos가 전부 1이면 있을 수 있다!
@@ -33,6 +32,7 @@ real_data = []
 test_data = []
 false_positive = 0.1
 fp=0
+arr_str=set()
 
 bloom = BloomFilter(5, false_positive)
 bloom.put('a')
@@ -43,7 +43,12 @@ bloom.put('e')
 # print(random.choice(string.ascii_lowercase))
 for i in range(30):
     str = random.choice(string.ascii_lowercase)
-    print(str, bloom.test(str))
+    arr_str.add(str)
+arr_str = list(arr_str)
+# print(arr_str)
+for i in range(len(arr_str)):
+    # print(arr_str[i], bloom.test(arr_str[i]))
+    test_data.append(arr_str[i])
 # print('a',bloom.test('a'))
 # print('b',bloom.test('b'))
 # print('c',bloom.test('c'))
