@@ -4,6 +4,7 @@ import random
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 
+# ver1
 class FM1:
     def __init__(self, domain_size): #들어오는 item이 어느 배열에서 들어오는지 그 배열의 크기
         self.domain_size = domain_size
@@ -23,7 +24,7 @@ class FM1:
         R = max(arr)
         return 2**R
 
-
+# ver2
 class FM2:
     def __init__(self, domain_size): #들어오는 item이 어느 배열에서 들어오는지 그 배열의 크기
         self.bitarray = 0
