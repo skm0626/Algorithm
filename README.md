@@ -1,6 +1,6 @@
 # Algorithm
 Start from : 2022.01.19~
-
+매일매일 꾸준히!
 
 ## Bigdata2022 - 빅데이터 최신 기술
 <details>
