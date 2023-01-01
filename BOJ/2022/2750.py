@@ -1,4 +1,3 @@
-# 버블소트로 구현
 import sys
 n = int(sys.stdin.readline())
 arr = []
